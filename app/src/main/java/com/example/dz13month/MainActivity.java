@@ -33,8 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 String text = et_search.getText().toString().trim();
                 if (text.isEmpty()) {
                     et_search.setError("Заполните поля");
-                }else if (et_search.equals(text1) && et_search.equals(text2) && et_search.equals(text3)){
-                    et_search.setError("Неправильный ввод текста");
+
                 }else {
                     Intent intent = new Intent(MainActivity.this,MainActivity2.class);
                     intent.putExtra("text",text);
